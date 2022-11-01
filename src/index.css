@@ -1,13 +1,155 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+  padding: 3rem;
+  min-height: 100vh;
+}
+
+#slack {
+  display: none;
+}
+
+/* image section */
+.image-section {
+  margin: 2rem auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-section figure + p {
+  margin: 1.3rem 0rem;
+}
+
+.image-section svg {
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.image-section svg + svg {
+  display: none;
+}
+
+.image img {
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.image-section p {
+  font-weight: 600;
+}
+
+/* link section */
+
+.links-section {
+  margin-top: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.links-section a {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  background-color: #EAECF0;
+  color: black;
+  min-height: 4rem;
+  font-size: 0.6rem;
+  margin-bottom: .9rem;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.45s ease-in-out;
+  padding : 1rem 1rem;
+}
+
+.links-section a p {
+  font-size: .8rem;
+}
+
+a:hover {
+  background-color: #D0D5DD;
+
+}
+
+/* icons section */
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem; 
+}
+
+.github-icon {
+  margin-left: 1rem;
+}
+
+footer {
+  margin-top: 8rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-top: grey 1px solid;
+  padding: 2rem 0rem;
+}
+
+.title {
+  margin: 2.2rem 0rem;
+}
+
+
+
+.title p {
+  font-size: .8rem;
+  color: #667085;
+}
+
+footer .ingressive {
+  height: 3rem;
+  width: 8rem
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 1rem;
+  }
+
+  .image-section {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image-section svg + svg {
+    display: block;
+    align-self: flex-end;
+  }
+  .image-section svg {
+    display: none;
+  }
+  
+  
 }
