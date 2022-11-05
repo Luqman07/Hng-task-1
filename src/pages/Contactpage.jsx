@@ -95,7 +95,7 @@ const Contactpage = () => {
         <div className="row check-wrapper">
           <input type="checkbox" name="" className="check" />
           <p className="check-info">
-            You agree to providing your data to "name" who may contact you.
+            You agree to providing your data to Luqman_A007 who may contact you.
           </p>
         </div>
         <div className="row">
