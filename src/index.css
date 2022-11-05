@@ -150,6 +150,7 @@ input:not(.check){
   border: 1px solid lightgray;
   margin-top: 5px;
   padding-left: 10px;
+  font-size: 16px;
 }
 
 /*The name section*/
@@ -169,6 +170,7 @@ input:not(.check){
   border: 1px solid lightgray;
   margin-top: 5px;
   padding: 10px 0 0 10px;
+  font-size: 16px;
 }
 
 /* checkbox section */
