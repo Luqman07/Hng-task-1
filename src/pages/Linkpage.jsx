@@ -44,7 +44,7 @@ const Linkpage = () => {
         <a href='https://books.zuri.team/design-rules' title="Zuri offers books on design and great insight into the vast world of creativity. The best part of it is that it's FREE!!" id='book__design'>
           <h1>Design Books</h1>
         </a>
-        <Link className="contact" to={"/contact"} title="Zuri offers books on design and great insight into the vast world of creativity. The best part of it is that it's FREE!!" id='book__design'>
+        <Link className="contact" to={"/contact"} title="Zuri offers books on design and great insight into the vast world of creativity. The best part of it is that it's FREE!!" id='contact'>
           <h1>Contact</h1>
         </Link>
       </section>
